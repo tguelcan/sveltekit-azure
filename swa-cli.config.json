@@ -1,0 +1,16 @@
+{
+	"$schema": "https://raw.githubusercontent.com/Azure/static-web-apps-cli/main/schema/swa-cli.config.schema.json",
+	"configurations": {
+		"dev": {
+			"context": "http://localhost:3000",
+			"run": "svelte-kit dev",
+			"apiLocation": "api",
+			"swaConfigLocation": "./"
+		},
+		"static": {
+			"context": "./build",
+			"apiLocation": "api",
+			"swaConfigLocation": "./"
+		}
+	}
+}
